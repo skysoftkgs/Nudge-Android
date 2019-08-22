@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/rl_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/nextRelativeLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_bullet_one" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uploadPic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_placeholder"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/uploadPicTextDrawable"
+            />
+
+        <TextView
+            android:id="@+id/editImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:layout_gravity="center_horizontal"
+            android:text="Add Photo"/>
+    </LinearLayout>
+
+    <com.nudge.font_family.OmnesRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="First Name*"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle_background">
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/iv_password"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:visibility="gone"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+    <com.nudge.font_family.OmnesRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Surname*"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle_background">
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/iv_dob"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_dob"
+            android:visibility="gone"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+    <com.nudge.font_family.OmnesRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Gender*"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle_background">
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:id="@+id/etGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:editable="false"
+            android:hint="Select Gender"
+            android:singleLine="true"
+            android:textColorHint="@color/grey_text_color"
+            android:layout_toLeftOf="@+id/iv_last_name"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_last_name"
+            android:visibility="visible"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/down_arrow_circle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+        <com.nudge.font_family.OmnesRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Relation*"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/relationLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_background">
+
+            <EditText
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:id="@+id/etRelationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:focusable="false"
+                android:editable="false"
+                android:hint="Select Relation"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/etRelationshipImage"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/grey_text_color"
+                android:background="@null"
+                android:padding="10dp" />
+
+            <ImageView
+                android:id="@+id/etRelationshipImage"
+                android:visibility="visible"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/down_arrow_circle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

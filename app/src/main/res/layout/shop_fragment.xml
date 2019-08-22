@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black">
+        <com.nudge.font_family.OmnesRegularTextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginRight="200dp"
+            android:text="Shop"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <com.nudge.font_family.OmnesRegularTextView
+            android:id="@+id/tv_heading_relation_event"
+            android:visibility="gone"
+            android:layout_below="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Shop"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <LinearLayout
+            android:id="@+id/calenderImageViewLay"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/filterImageViewLay"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/calenderImageView"
+                android:layout_toLeftOf="@+id/filterImageView"
+                android:src="@drawable/calendar_white"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filterImageViewLay"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/filterImageView"
+                android:src="@drawable/filter_white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:paddingBottom="5dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextColor="#D3D3D3"
+        app:tabIndicatorColor="#ffffff"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabMode="fixed"
+        app:tabGravity="fill"/>
+    <com.nudge.utils.NonSwipeableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:layout_below="@id/tabs"/>
+</LinearLayout>

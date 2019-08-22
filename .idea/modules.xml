@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Nudge_19thapril.iml" filepath="$PROJECT_DIR$/Nudge_19thapril.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crystalrangeseekbar/crystalrangeseekbar.iml" filepath="$PROJECT_DIR$/crystalrangeseekbar/crystalrangeseekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipe-reveal-layout/swipe-reveal-layout.iml" filepath="$PROJECT_DIR$/swipe-reveal-layout/swipe-reveal-layout.iml" />
+    </modules>
+  </component>
+</project>

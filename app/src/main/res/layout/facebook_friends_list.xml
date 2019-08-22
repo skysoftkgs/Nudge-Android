@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/backArrowImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <com.nudge.font_family.OmnesRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="Facebook Profiles"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <com.nudge.font_family.OmnesRegularTextView
+            android:id="@+id/doneText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:text="Done"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:id="@+id/searchLay"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search_grey"/>
+            <com.nudge.font_family.OmnesRegularEditText
+                android:layout_marginLeft="5dp"
+                android:id="@+id/search"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:hint="Search profiles by name"
+                android:textColorHint="#4000"
+                android:background="@null"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.nudge.alphabaticIndexSearch.IndexFastScrollRecyclerView
+        android:layout_below="@+id/searchLay"
+        android:layout_marginTop="5dp"
+        android:id="@+id/fast_scroller_recycler"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

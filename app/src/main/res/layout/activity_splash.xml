@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nudge.activity.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_middle_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gift_icon"/>
+
+        <com.nudge.font_family.OmnesRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nudge"
+            android:textSize="50dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        <com.nudge.font_family.OmnesRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/the_gifting_app"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/ll_middle_text"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/tv_splash_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>
